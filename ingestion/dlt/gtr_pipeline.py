@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import argparse
 import datetime as dt
 import os
 from typing import Any, Dict, Iterable, Iterator, List
@@ -89,7 +88,4 @@ def run_pipeline() -> None:
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--run", action="store_true", default=True)
-    parser.parse_args()
     run_pipeline()
