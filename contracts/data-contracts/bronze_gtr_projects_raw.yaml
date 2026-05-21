@@ -1,0 +1,21 @@
+kind: DataContract
+apiVersion: odcs/v3
+id: bronze_gtr_projects_raw
+status: active
+owner:
+  name: local_data_platform
+  contact: data-platform@example.com
+dataset:
+  name: bronze_gtr_projects_raw
+  description: Raw project records from UKRI Gateway to Research API v2.
+  schema:
+    - name: project_id
+      logicalType: string
+      required: true
+      unique: true
+    - name: ingested_at
+      logicalType: timestamp
+      required: true
+    - name: payload
+      logicalType: object
+      required: true

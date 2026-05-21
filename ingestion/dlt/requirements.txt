@@ -1,0 +1,2 @@
+dlt[filesystem]==1.17.1
+requests==2.32.3

@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: bronze
+    schema: main
+    tables:
+      - name: bronze_gtr_projects_raw
+      - name: bronze_gtr_organizations_raw

@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: silver_gtr_projects
+    columns:
+      - name: project_id
+        tests:
+          - not_null
+          - unique
+  - name: silver_gtr_organizations
+    columns:
+      - name: organization_id
+        tests:
+          - not_null
+          - unique

@@ -1,0 +1,20 @@
+name: gtr_local_platform
+version: 1.0.0
+config-version: 2
+
+profile: gtr_local_platform
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+
+target-path: "/opt/local_data_platform/.local_data_platform/dbt/target"
+log-path: "/opt/local_data_platform/.local_data_platform/dbt/logs"
+clean-targets:
+  - "/opt/local_data_platform/.local_data_platform/dbt/target"
+  - "/opt/local_data_platform/.local_data_platform/dbt/logs"
+
+models:
+  gtr_local_platform:
+    +materialized: table
