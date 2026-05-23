@@ -1,0 +1,20 @@
+kind: DataProduct
+apiVersion: odps/v1
+id: gtr_projects_organizations
+name: UKRI Gateway to Research Projects and Organizations
+description: Thin-slice product delivering GtR projects and organizations for local-first analytics.
+owners:
+  - name: local_data_platform
+    contact: data-platform@example.com
+datasets:
+  - bronze_gtr_projects_raw
+  - bronze_gtr_organizations_raw
+  - silver_gtr_projects
+  - silver_gtr_organizations
+interfaces:
+  - type: airflow_dag
+    name: product_gtr_projects_orgs
+  - type: sql
+    name: duckdb
+lifecycle:
+  stage: alpha

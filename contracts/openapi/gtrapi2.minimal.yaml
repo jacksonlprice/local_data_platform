@@ -1,0 +1,38 @@
+openapi: 3.0.3
+info:
+  title: UKRI Gateway to Research API v2 (minimal subset)
+  version: "2"
+  description: Minimal path references for the local_data_platform thin-slice ingestion.
+servers:
+  - url: https://gtr.ukri.org/gtr/api
+paths:
+  /projects:
+    get:
+      summary: List projects
+      parameters:
+        - name: s
+          in: query
+          schema:
+            type: integer
+        - name: size
+          in: query
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Projects payload
+  /organisations:
+    get:
+      summary: List organisations
+      parameters:
+        - name: s
+          in: query
+          schema:
+            type: integer
+        - name: size
+          in: query
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Organisations payload

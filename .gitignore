@@ -1,0 +1,5 @@
+.env
+.local_data_platform/*
+!.local_data_platform/.gitkeep
+__pycache__/
+*.pyc

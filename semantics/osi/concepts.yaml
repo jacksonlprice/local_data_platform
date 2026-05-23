@@ -1,0 +1,12 @@
+version: 0.1.0
+concepts:
+  - name: Project
+    description: A funded research project represented in GtR.
+    mappings:
+      silver_table: silver_gtr_projects
+      key: project_id
+  - name: Organization
+    description: A research organization represented in GtR.
+    mappings:
+      silver_table: silver_gtr_organizations
+      key: organization_id

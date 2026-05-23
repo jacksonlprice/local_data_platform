@@ -1,0 +1,9 @@
+gtr_local_platform:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: /opt/local_data_platform/.local_data_platform/duckdb/gtr.duckdb
+      threads: 4
+      extensions:
+        - json
